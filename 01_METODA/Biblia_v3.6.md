@@ -290,7 +290,6 @@ Jeśli blokada → sprawdź Trigger Map → skoryguj → powtórz.
 Zapisz: prompt + wynik + lekcję do Biblii.
 Cegła po cegle – buduj legendę.
 
-
 ---
 
 ## 📦 XI. STRUKTURA PROJEKTU (Pudełko z Legendą)

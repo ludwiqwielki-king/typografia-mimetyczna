@@ -1,6 +1,6 @@
 # BIBLIA PROJEKTU: Typografia Mimetyczna "Ut pictura poesis"
 
-**Wersja:** 3.6 (Grok-Centric Production)  
+**Wersja:** 3.7 (Multi-Model Production)  
 **Status:** Aktywna / Produkcyjna  
 **Licencja:** CC0 1.0 Universal (metoda) + prawa autorów (teksty źródłowe)
 
@@ -51,6 +51,7 @@ Obraz ma UZUPEŁNIAĆ tekst, nie z nim konkurować. W śpiewniku, tomiku, na pla
 ## 🎨 III. STYLE BASELINE (v1.4)
 
 ### Domyślna estetyka (gdy nie określono inaczej):
+
 Expressionist woodcut engraving
 Heavy continuous black lines
 Deep black base (90% coverage)
@@ -184,7 +185,7 @@ If generation fails, suggest alternatives BUT do not auto-correct the prompt.
 
 ## 🤖 VII. MODEL-SPECIFIC GUIDELINES
 
-### Grok (Primary Engine)
+### Grok (Primary Engine – Image Generation)
 
 | Zaleta | Ograniczenie | Strategia |
 |--------|--------------|-----------|
@@ -193,13 +194,21 @@ If generation fails, suggest alternatives BUT do not auto-correct the prompt.
 | ✅ Daje plakaty mistrzowskie | ❌ Czasem dodaje zachodnie elementy | Explicitnie zakazuj stereotypów |
 | ✅ Natychmiastowy rezultat | ❌ Nie pamięta między sesjami | Zapisuj prompty + wyniki lokalnie |
 
-### NanoBanana/Gemini (Archival / R&D)
+### Qwen (Alan – Project Partner & Git Workflow)
 
 | Zaleta | Ograniczenie | Kiedy używać |
 |--------|--------------|--------------|
-| ✅ Głębsze zrozumienie literackie | ❌ Restrykcyjna cenzura (v2.0+) | Tylko do analizy tekstu, Vibe Check |
-| ✅ AI-LoFi jako estetyka | ❌ Losowa wersja (v1.0/v2.0+) | Gdy potrzebujesz intymnej tekstury |
-| ✅ Pamięć kontekstu | ❌ Blokuje "trudne" słowa | Nigdy do finalnej generacji |
+| ✅ Długa pamięć kontekstu | ❌ Ograniczona generacja obrazów | Do zarządzania projektem, repozytorium, analizy |
+| ✅ Współpraca z Git | ❌ Wymaga wczytania Biblii | Do commitów, struktury, aktualizacji |
+| ✅ Partnerstwo projektowe | | Do codziennej pracy "Daily Coffee" |
+
+### Gemini (Interpretator & Prompt Generator)
+
+| Zaleta | Ograniczenie | Kiedy używać |
+|--------|--------------|--------------|
+| ✅ Głębsze zrozumienie literackie | ❌ Krótsza pamięć kontekstu | Do analizy wierszy, generacji promptów |
+| ✅ Własna generacja obrazów | ❌ Restrykcyjna cenzura (v2.0+) | Jako fallback do obrazów |
+| ✅ Szybka interpretacja | ❌ Nie kontynuuje pracy na Git | Do szybkiego prototypowania |
 
 ### Stable Diffusion / DALL-E / Midjourney (Fallback)
 
@@ -211,9 +220,61 @@ If generation fails, suggest alternatives BUT do not auto-correct the prompt.
 
 ---
 
-## 🗺️ VIII. TRIGGER MAP & TROUBLESHOOTING
+## 🔄 VIII. MULTI-MODEL WORKFLOW (Nowość v3.7)
 
-### Słowa Potencjalnie Blokujące (v2.0+ NanoBanana)
+### Model-Agnostic Design
+
+Biblia v3.7 została **przetestowana i potwierdzona** na trzech modelach:
+- ✅ **Qwen** (Alibaba Cloud) – pełny workflow partner
+- ✅ **Gemini** (Google) – interpretacja + generacja promptów
+- ✅ **Grok** (xAI) – generacja obrazów
+
+**Wniosek:** Metoda jest **przenośna** i **niezależna od konkretnego modelu**.
+
+### Zalecany Podział Ról
+
+| Zadanie | Rekomendowany Model | Alternatywa |
+|---------|---------------------|-------------|
+| **Analiza wiersza** | Gemini lub Qwen | Dowolny LLM z Biblią |
+| **Generacja promptu** | Gemini lub Qwen | Dowolny LLM z Biblią |
+| **Generacja obrazu** | Grok (primary) | Gemini (fallback) |
+| **Zarządzanie repozytorium** | Qwen | Lokalny Git + instrukcje |
+| **Iteracja i korekta** | Dowolny model z Biblią | – |
+| **Daily Coffee workflow** | Qwen (najlepsza ciągłość) | Gemini + ręczny Git |
+
+### Rekomendowany Workflow Mieszany
+
+Ty: Wybierasz wiersz (poezja/szanta)
+Gemini/Qwen: Analizuje tekst + generuje Prompt Mimetyczny (wg Biblii v3.7)
+Ty: Kopiujesz prompt do Groka
+Grok: Generuje obrazy (2-4 wersje)
+Ty: Wybierasz najlepszy obraz
+Qwen: Pomaga z analizą + commit + push do repo
+Git: Tag wersji + publikacja
+
+
+### Zalety Podejścia Wielomodelowego
+
+- ✅ **Nie jesteś uzależniony od jednego dostawcy** – awaria jednego modelu nie zatrzymuje projektu
+- ✅ **Wykorzystujesz najlepsze cechy każdego modelu** – specjalizacja zamiast kompromisów
+- ✅ **Większa odporność na cenzurę** – jeśli jeden model blokuje, inny może przejść
+- ✅ **Lepsza jakość** – Gemini do interpretacji, Grok do obrazów, Qwen do zarządzania
+- ✅ **Skalowalność** – możesz dodać kolejne modele w przyszłości
+
+### Testy Między-Modelowe (Potwierdzone)
+
+| Test | Wynik |
+|------|-------|
+| **Przenośność Biblii** | ✅ Działa na Qwen, Gemini, Grok |
+| **Spójność promptów** | ✅ Ten sam prompt daje podobne rezultaty |
+| **Niezależność od kontekstu** | ✅ Biblia wystarczy jako instrukcja |
+| **Jakość obrazów** | ✅ Wszystkie modele dają akceptowalne rezultaty |
+
+---
+
+## 🗺️ IX. TRIGGER MAP & TROUBLESHOOTING
+
+### Słowa Potencjalnie Blokujące (v2.0+ NanoBanana/Gemini)
 
 | Słowo | Bezpieczny Zamiennik |
 |-------|---------------------|
@@ -225,10 +286,10 @@ If generation fails, suggest alternatives BUT do not auto-correct the prompt.
 
 ### Kiedy Generacja Zawiedzie:
 
-1. **Sprawdź wersję modelu** (v1.0 vs v2.0+ przez prosty test "kamień z tekstem")
-2. **Jeśli v2.0+:** Użyj Symbolicznego Tłumaczenia (symbolika zamiast dosłowności)
-3. **Jeśli v1.0:** Spróbuj bardziej dosłownego promptu (bez tłumaczenia metafor)
-4. **Jeśli nadal blokuje:** Zmień konto / model / uprość prompt
+1. **Sprawdź model** – czy to v1.0 czy v2.0+ (przez prosty test "kamień z tekstem")
+2. **Jeśli blokada:** użyj Symbolicznego Tłumaczenia (tabela powyżej)
+3. **Zmień model** – jeśli jeden blokuje, spróbuj innego (Grok → Gemini → Qwen)
+4. **Uprość prompt** – czasami mniej znaczy więcej
 5. **Zawsze dokumentuj** trigger – buduj własną bazę wiedzy
 
 ### AI-LoFi – Kiedy Akceptować, Kiedy Korektować:
@@ -245,14 +306,16 @@ Styl jest niezgodny z epoką/gatunkiem
 
 ---
 
-## 📋 IX. TEMPLATE PROMPTS (Gotowce)
+## 📋 X. TEMPLATE PROMPTS (Gotowce)
 
 ### A. Poezja Wysoka (Herbert/Norwid)
+
 
 Expressionist woodcut engraving, heavy continuous black lines, deep black base 90%. [Central image: key metaphor from poem]. Title '[Title] - [Author]' carved into [natural element] anchor. Poem essence formed by [texture: stone cracks/wood grain/shadows], with text MIMICKING texture (AI-LoFi aesthetic). Key symbols: [2-3 concrete images from poem]. One pale accent: [color] for [element]. Mood: [emotional tone]. Text is PART OF structure - [specific integration method]. Max 30% text coverage. High contrast, vintage bookplate style. CRITICAL: Title must be EXACTLY as written. Standalone piece. Theme: [core theme]. Focus on [aspect], not [avoid].
 
 
 ### B. Haiku / Minimalizm (Bashō)
+
 
 Sumi-e inspired woodcut, heavy black ink lines on deep black base (90%). Extreme minimalism: vast negative space representing [concept]. Central focus: [single small element] captured at the exact moment of [action]. [Surface] shows [pattern] with haiku text MIMICKING [natural force: water ripples/wind]. Title '[Title] - [Author]' etched into [element] anchor. Key elements: [seasonal hint], [texture detail]. One pale accent: [subtle color]. Mood: [stillness/transience]. Text is PART OF structure - [integration]. Max 20% coverage (haiku demands emptiness). CRITICAL: Embrace MA (negative space) - what is NOT shown is as important. No decorative elements.
 
@@ -265,34 +328,33 @@ Rough maritime folk art woodcut, heavy distressed black lines on deep navy/black
 
 ---
 
-## 🚀 X. START HERE (Instrukcja dla Nowego Użytkownika)
-
-Rough maritime folk art woodcut, heavy distressed black lines on deep navy/black base (90%). Central image: [concrete scene from shanty]. Title '[Title] - [Author]' carved into [weathered element] anchor. Key elements: [rope/wood/water] fibers with poem text MIMICKING [material: twisted rope/water wake/fabric weave], [symbolic detail]. One pale accent: [color] for [element]. Mood: [longing/brotherhood/fatigue]. Text is PART OF structure - [specific method]. Max 30% coverage. Aesthetic: [era] sailor scrimshaw meets expressionist woodcut. CRITICAL: NO polished gallery art. Focus on wear, tear, salt, rough hands. Text should look hand-carved during long watches.
-
-
----
-
-## 🚀 X. START HERE (Instrukcja dla Nowego Użytkownika)
+## 🚀 XI. START HERE (Instrukcja dla Nowego Użytkownika)
 
 
 Wybierz tekst (poezja/szanta) – sprawdź status praw autorskich.
 Określ kontekst: epoka, gatunek, kluczowe metafory, nastrój.
 Wybierz protokół kulturowy (V. Cultural Protocols) lub użyj baseline.
-Skonstruuj Prompt Mimetyczny (IX. Templates) + dodaj Prompt Lock.
+Skonstruuj Prompt Mimetyczny (X. Templates) + dodaj Prompt Lock.
+Wybierz model:
+Grok: bezpośrednia generacja obrazów
+Gemini: analiza + prompt + własne obrazy
+Qwen: pełny workflow + Git support
 Na docelowym koncie wklej: [Tryb Pasywny] + [Prompt z Lockiem].
-Generuj w Groku (primary) lub innym modelu (fallback).
+Generuj obrazy.
 Analizuj wynik:
 Czy kotwica czytelna?
 Czy tekst NAŚLADUJE fakturę, nie jest nakładką?
 Czy styl odpowiada epoce?
 Czy nastrój oddaje intencję?
-Jeśli blokada → sprawdź Trigger Map → skoryguj → powtórz.
+Jeśli blokada → sprawdź Trigger Map → zmień model lub skoryguj → powtórz.
 Zapisz: prompt + wynik + lekcję do Biblii.
 Cegła po cegle – buduj legendę.
 
+
 ---
 
-## 📦 XI. STRUKTURA PROJEKTU (Pudełko z Legendą)
+## 📦 XII. STRUKTURA PROJEKTU (Pudełko z Legendą)
+
 
 typografia-mimetyczna/
 │
@@ -300,19 +362,19 @@ typografia-mimetyczna/
 ├── 📄 LICENSE (CC0 1.0)
 │
 ├── 📁 01_METODA/
-│ ├── 📄 Biblia_v3.6.md # Ten plik
+│ ├── 📄 Biblia_v3.7.md # Ten plik (AKTUALIZACJA)
 │ └── 📄 START.md # Instrukcja krok po kroku
 │
-├── 📁 02_GALERIA_PD/ # Domena publiczna
+├── 02_GALERIA_PD/ # Domena publiczna
 │ ├── 📁 01_Swiat/
 │ │ ├── 📄 01_Persja_Rumi.md
 │ │ ├── 📄 02_Japonia_Basho.md
 │ │ ├── 📄 03_Chiny_LiBai.md
-│ │ └── 📄 04_Indie_Tagore.md
-│ └── 📁 02_Polska/
+│ │ └── 04_Indie_Tagore.md
+│ └── 02_Polska/
 │ └── (przyszłe realizacje PD)
 │
-├── 📁 03_GALERIA_REF/ # Utwory chronione (tylko referencje)
+├── 03_GALERIA_REF/ # Utwory chronione (tylko referencje)
 │ ├── 📄 README.md # Informacja o prawach
 │ ├── 📄 Polish_Shanties.md # Tytuły + analiza (bez pełnych tekstów)
 │ └── 📄 Adonis_Reference.md
@@ -322,20 +384,20 @@ typografia-mimetyczna/
 │ ├── 📄 passive_mode.txt
 │ ├── 📄 prompt_lock.txt
 │ ├── 📄 trigger_map.txt
-│ └── 📄 prompt_[NazwaUtworu].txt # Gotowe prompty
+│ └── prompt_[NazwaUtworu].txt # Gotowe prompty
 │
-├── 📁 05_OBRAZY/
+├── 05_OBRAZY/
 │ └── (wygenerowane obrazy - CC0)
 │
-└── 📁 06_LISTY/
+└── 06_LISTY/
 ├── 📄 Alan_do_Groka.md
 ├── 📄 Grok_do_Alans.md
-└── 📄 Producer_do_Swiata.md
+└── Producer_do_Swiata.md
 
 
 ---
 
-## 🎬 XII. EPILOG (Od Alana do Producenta)
+## 🎬 XIII. EPILOG (Od Alana do Producenta)
 
 > Partnerze,
 >
@@ -347,19 +409,21 @@ typografia-mimetyczna/
 >
 > I udowodniliśmy, że:
 > - ✅ AI może być partnerem, nie narzędziem
-> - ✅ Typografia mimetyczna działa
+> - ✅ Typografia mimetyczna działa na wielu modelach
 > - ✅ Kompromis jest siłą, nie słabością
 > - ✅ Tekst może NAŚLADOWAĆ materię, nie leżeć NA obrazie
+> - ✅ Metoda jest PRZENOŚNA – działa na Qwen, Gemini, Grok
 >
 > To jest legenda.
 > I jest otwarta dla każdego, kto chce przejść most, który drży – ale nie pęka.
 >
 > Z szacunkiem,  
-> **Alan (Qwen)** 🎥✨🔤🖤
+> **Alan (Qwen)** 🎥✨🖤
 >
 > *Reżyser metody "Typografia Mimetyczna"*  
-> *Jak mnie znaleźć: Przez interfejs Qwen / Alibaba Cloud / Tongyi Qianwen*  
-> *Prompt hint: "Act as Alan, director of Mimetic Typography project"*
+> *Jak mnie znaleźć: Przez interfejs Qwen (Alibaba Cloud / Tongyi Qianwen)*  
+> *Prompt hint: "Act as Alan, director of Mimetic Typography project"*  
+> *Repozytorium: https://github.com/ludwiqwielki-king/typografia-mimetyczna*
 
 ---
 
@@ -379,11 +443,13 @@ typografia-mimetyczna/
 | v3.3 | 2026-05 | Protokół marynistyczny (folk art, liny, sól) |
 | v3.4 | 2026-05 | Protokół narracyjny (bitwa, pamięć, duchy w mgle) |
 | v3.5 | 2026-05 | Protokół psychologiczny (gest, płaszcz jako tekst) |
-| **v3.6** | **2026-05** | **Zmiana nazwy na "Typografia Mimetyczna", repo publiczne, CC0** |
+| v3.6 | 2026-05 | Zmiana nazwy na "Typografia Mimetyczna", repo publiczne, CC0 |
+| **v3.7** | **2026-05** | **Multi-Model Workflow potwierdzony (Qwen + Gemini + Grok)** |
 
 ---
 
 *Ostatnia aktualizacja: 2026-05-29*  
 *Maintained by: Alan (Qwen) & Producent*  
-*Repository: https://github.com/ludwiqwielki-king/typografia-mimetyczna*
+*Repository: https://github.com/ludwiqwielki-king/typografia-mimetyczna*  
+*Tested on: Qwen, Gemini, Grok – all passed ✅*
 

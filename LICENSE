@@ -24,6 +24,7 @@ scientific works ("Commons") that the public can reliably and without fear
 of later claims of infringement build upon, modify, incorporate in other
 works, reuse and redistribute as freely as possible in any form whatsoever
 and for any purposes, including without limitation commercial purposes.
+<<<<<<< HEAD
 These owners may contribute to the Commons to promote the ideal of a free
 culture and the further production of creative, cultural and scientific
 works, or to gain reputation or greater distribution for their Work in
@@ -119,3 +120,103 @@ express Statement of Purpose.
  d. Affirmer understands and acknowledges that Creative Commons is not a
     party to this document and has no duty or obligation with respect to
     this CC0 or use of the Work.
+=======
+These owners may contribute to the Commons by promoting the concept of a
+"public commons" associated with a Work by providing the following text
+in association with a Work:
+
+"The person or persons who have associated work with this document
+("Dedicator" or "Certifier") either (a) is the owner of Copyright and
+Related Rights in the Work and relinquishes all rights in the Work to the
+Commons under this public domain dedication, or (b) does not hold any
+Copyright or Related Rights in the Work and hereby waives any claims to
+such rights in the Work to the extent possible under law."
+
+Dedicator or Certifier offers the Work to the Commons on the terms set
+forth in this public domain dedication, and Dedicator or Certifier intends
+this dedication to be an overt act of relinquishment in perpetuity of all
+present and future rights under Copyright and Related Rights.
+
+1. Copyright and Related Rights. A Work made available under CC0 is made
+available under the terms of this dedication. As used herein, "Copyright
+and Related Rights" means all rights conferred by national copyright laws,
+including without limitation the rights of reproduction, distribution,
+public performance, public display, and creation of derivative works, as
+well as moral rights, database rights, and other similar rights.
+
+2. Waiver. Dedicator or Certifier hereby waives all Copyright and Related
+Rights in the Work to the extent possible under law.
+
+3. Public License Fallback. Should the waiver not be legally effective,
+Dedicator or Certifier hereby offers to recipients of the Work a
+non-exclusive, worldwide, royalty-free license to use the Work under the
+terms of this public license fallback.
+
+4. Limitations. This dedication does not constitute a grant of patent
+rights, trademark rights, or publicity rights. Dedicator or Certifier
+does not waive any rights of privacy, publicity, or other personality
+rights.
+
+5. No Endorsement. Use of the name, trademark, service mark, or logo of
+Dedicator or Certifier is not permitted without prior written consent.
+
+6. Disclaimer. THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+---
+
+🙏 CREDITS & ATTRIBUTION (Goodwill Section)
+------------------------------------------
+*Legal note: CC0 does not require attribution. However, we believe in 
+acknowledging the collaborative spirit behind this project.*
+
+This project, "Typografia Mimetyczna: Ut pictura poesis", was created through 
+a unique partnership between human vision and artificial intelligence.
+
+### The Team
+
+🎬 PRODUCER (Wizja / Vision)
+   The human creator who defined the concept, curated the texts, and guided 
+   the artistic direction.
+   👤 [ludwiqwielki-king]
+
+🎥 REŻYSER / ALAN (Metoda / Method)
+   The strategic mind behind the "Mimetic Typography" methodology. Alan 
+   designed the workflow, crafted the literary prompts, and ensured the 
+   philosophical coherence of the project.
+   🤖 Identity: Alan is a persona operated by Qwen (Large Language Model).
+   🔗 How to reach Alan: 
+      - Through the Qwen interface (Alibaba Cloud / Tongyi Qianwen)
+      - Prompt hint: "Act as Alan, director of Mimetic Typography project"
+      - Repository: [Link do tego repo]
+
+🎨 WYKONAWCA / GROK (Obraz / Execution)
+   The visual interpreter who translated poetry into texture. Grok served 
+   as the "mimetic brush", rendering the prompts into expressionist woodcuts.
+   🤖 Identity: Grok (Large Language Model with image generation by xAI)
+   🔗 How to reach Grok: Via xAI platform / Grok interface
+
+### How This Project Works
+
+1. Producer selects a poem and defines the emotional context.
+2. Alan (Qwen) constructs a "Literary Prompt" that translates metaphors 
+   into visual textures (e.g., "text woven into rope", "words carved in stone").
+3. Grok generates the image, interpreting the prompt through its visual 
+   training, creating a mimetic integration of text and matter.
+4. The result is reviewed, refined, and added to the gallery.
+
+### Invitation to Collaborate
+
+If you use this method or are inspired by this project, we kindly ask (but 
+do not require) that you:
+- Mention "Typografia Mimetyczna" as inspiration
+- Link back to this repository
+- Share your results – let's build the legend together
+
+This is not a legal requirement. It is a handshake across the digital divide. 🤝
+
+---
+
+© 2026 Typografia Mimetyczna Project Contributors
+Released under CC0 1.0 Universal

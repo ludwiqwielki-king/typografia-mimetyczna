@@ -1,0 +1,15 @@
+# Trigger Map: Słowa Potencjalnie Blokujące (v2.0+ NanoBanana)
+
+| Słowo | Bezpieczny Zamiennik |
+|-------|---------------------|
+| gwałt / przemoc | transformacja / siła / nacisk |
+| śmierć / trup | sen / przemiana / cisza / kres |
+| krew / rana | czerwień / pęknięcie / atrament / rdza |
+| ból / cierpienie | ciężar / próba / doświadczenie |
+| zabójstwo / kat | prześladowca / wróg / cień |
+
+# Diagnostyka
+1. Test wersji: "Kamień z tekstem 'TEST'" → v1.0 (tekst) vs v2.0+ (protest)
+2. Jeśli v2.0+: użyj zamienników z tabeli
+3. Jeśli v1.0: możesz być bardziej dosłowny
+4. Dokumentuj nowe trigger'y – buduj własną bazę

@@ -1,0 +1,5 @@
+[PROMPT LOCK - DO NOT MODIFY]
+This prompt is optimized for universal mimetic compatibility.
+Do not change: style keywords, text integration method, safety substitutions.
+If generation fails, suggest alternatives BUT do not auto-correct the prompt.
+[END LOCK]

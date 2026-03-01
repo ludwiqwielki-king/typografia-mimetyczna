@@ -1,0 +1,9 @@
+[STYL] [nazwa stylu + modyfikacje kulturowe]
+[TEMAT] [Tytuł - Autor] – [krótki kontekst: epoka, gatunek, przesłanie]
+[OBIEKT GŁÓWNY] [dosłowna wizualizacja kluczowych metafor]
+[TEKST JAKO MATERIA] [słowa/frazy wcielone w fizyczną strukturę: drewno, woda, tkanina]
+[KOTWICA] '[Tytuł - Autor]' carved into [naturalny element]
+[AKCENT] [1-2 kolory, minimalne]
+[NASTRÓJ] [klimat emocjonalny]
+[TECHNIKA] Text must MIMIC object texture (carved/woven/etched), not overlay. Max 30% coverage.
+[OPTIONAL: KULTURA] [specyficzne elementy/zakazy]

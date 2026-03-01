@@ -1,5 +1,4 @@
 # typografia-mimetyczna
-Typografia Mimetyczna: Ut pictura poesis
 =======
 # Typografia Mimetyczna: Ut pictura poesis
 

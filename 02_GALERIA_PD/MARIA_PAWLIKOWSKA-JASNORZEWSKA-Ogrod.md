@@ -1,10 +1,12 @@
 MARIA PAWLIKOWSKA-JASNORZEWSKA - Ogród
 
 ## Tekst
+```
 Gdy wiosna zaświta,
 jest w ogrodzie raz ciemniej, raz jaśniej.
 Wciąż coś zakwita, przekwita.
 Wczoraj kwitło moje serce. Dziś jaśmin.
+```
 
 ## Prompt
 [INSTRUKCJA SYSTEMOWA - TRYB PASYWNY]
@@ -36,5 +38,5 @@ If generation fails, suggest alternatives BUT do not auto-correct the prompt.
 [END LOCK]
 
 ## Obraz(y)
-https://github.com/ludwiqwielki-king/typografia-mimetyczna/blob/main/05_OBRAZY/MARIA%20PAWLIKOWSKA-JASNORZEWSKA%20-%20Ogr%C3%B3d_1.jpg
-https://github.com/ludwiqwielki-king/typografia-mimetyczna/blob/main/05_OBRAZY/MARIA%20PAWLIKOWSKA-JASNORZEWSKA%20-%20Ogr%C3%B3d_2.jpg
+![Ogród](https://github.com/ludwiqwielki-king/typografia-mimetyczna/blob/main/05_OBRAZY/MARIA%20PAWLIKOWSKA-JASNORZEWSKA%20-%20Ogr%C3%B3d_1.jpg?raw=true)
+![Ogród](https://github.com/ludwiqwielki-king/typografia-mimetyczna/blob/main/05_OBRAZY/MARIA%20PAWLIKOWSKA-JASNORZEWSKA%20-%20Ogr%C3%B3d_2.jpg?raw=true)

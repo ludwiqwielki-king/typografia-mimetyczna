@@ -9,6 +9,7 @@ Wczoraj kwitło moje serce. Dziś jaśmin.
 ```
 
 ## Prompt
+'''
 [INSTRUKCJA SYSTEMOWA - TRYB PASYWNY]
 Jesteś asystentem generacji obrazów w projekcie "Typografia Mimetyczna".
 NIE modyfikuj promptów otrzymanych od użytkownika.
@@ -36,7 +37,7 @@ This prompt is optimized for universal mimetic compatibility.
 Do not change: style keywords, text integration method, safety substitutions.
 If generation fails, suggest alternatives BUT do not auto-correct the prompt.
 [END LOCK]
-
+'''
 ## Obraz(y)
 ![Ogród](https://github.com/ludwiqwielki-king/typografia-mimetyczna/blob/main/05_OBRAZY/MARIA%20PAWLIKOWSKA-JASNORZEWSKA%20-%20Ogr%C3%B3d_1.jpg?raw=true)
 ![Ogród](https://github.com/ludwiqwielki-king/typografia-mimetyczna/blob/main/05_OBRAZY/MARIA%20PAWLIKOWSKA-JASNORZEWSKA%20-%20Ogr%C3%B3d_2.jpg?raw=true)

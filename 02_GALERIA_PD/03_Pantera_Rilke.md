@@ -53,4 +53,5 @@ If generation fails, suggest alternatives BUT do not auto-correct the prompt.
 [END LOCK]
 ```
 ## Obraz(y)
-
+![Pantera](https://github.com/ludwiqwielki-king/typografia-mimetyczna/blob/main/05_OBRAZY/Rainer%20Maria%20Rilke%20-%20Pantera_1.jpg?raw=true)
+![Pantera](https://github.com/ludwiqwielki-king/typografia-mimetyczna/blob/main/05_OBRAZY/Rainer%20Maria%20Rilke%20-%20Pantera_2.jpg?raw=true)
